@@ -1,0 +1,20 @@
+div {
+    background-color: antiquewhite;
+    color: black;
+    width: 400px;
+    margin: 20px;
+    padding: 10px;
+    outline: 10px solid antiquewhite;
+}
+
+.num-1 {
+    border-left: 5px solid red;
+}
+
+.num-2 {
+    visibility: hidden;
+}
+
+.num-3 {
+    border-left: 5px solid green; 
+}
