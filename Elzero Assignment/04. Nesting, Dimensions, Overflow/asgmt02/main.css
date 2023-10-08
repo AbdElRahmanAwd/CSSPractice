@@ -1,0 +1,12 @@
+div {
+    background-color: rgb(166, 55, 55);
+    padding: 10px;
+    margin: 20px 20px;
+    color: white;
+    width: fit-content;
+    max-width: 400px;
+}
+
+.four {
+    overflow-x: hidden;
+}
