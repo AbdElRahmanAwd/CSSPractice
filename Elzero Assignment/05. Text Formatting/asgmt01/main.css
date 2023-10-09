@@ -1,0 +1,7 @@
+div {
+    background-color: white;
+    color: black;
+    text-shadow: .5px .5px 0 red ,
+        1px 1px 0 rgb(0, 234, 255) ,
+        1.5px 1.5px 0 purple;
+}
