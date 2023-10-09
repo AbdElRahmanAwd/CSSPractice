@@ -1,0 +1,17 @@
+p {
+    width: fit-content;
+    padding: 10px 10px;
+    margin: auto;
+}
+
+.one {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.two {
+    font-family: 'Cairo', sans-serif;
+}
+
+.three {
+    font-family: 'Jomhuria', cursive;
+}
