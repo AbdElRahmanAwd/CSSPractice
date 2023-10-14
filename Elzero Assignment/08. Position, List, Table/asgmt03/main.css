@@ -1,0 +1,21 @@
+.ul {
+    width: 400px;
+    margin: 20px  auto;
+}
+
+li {
+    background-color: white;
+    padding: 5px;
+    margin: 5px  ;
+}
+
+.address {
+    background-color: #eee;
+    list-style-type: none;
+    margin: 10px;
+}
+
+
+.address ul {
+    list-style-position: inside;
+}
