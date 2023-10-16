@@ -1,0 +1,17 @@
+div {
+    margin: auto;
+    background-color: #eee;
+    width: fit-content;
+    padding: 20px;
+}
+
+div::first-letter {
+    content: "";
+    background-color: red;
+    color: white;
+    padding: 15px 10px;
+    font-weight: bold;
+    /* 10+20padding+.5*10padding */
+    margin-left:  -35px;
+    margin-right: 15px;
+}
