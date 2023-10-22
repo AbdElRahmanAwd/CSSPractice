@@ -1,0 +1,10 @@
+div {
+    margin: 30px auto;
+    width: 360px;
+    font-size:0 !important;
+}
+
+div::before {
+    content: "ELZERO";
+    font-size:20px !important;
+}
