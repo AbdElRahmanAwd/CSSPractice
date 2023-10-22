@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    margin: 30px auto;
+    width: 650px;
+}
+
+span {
+    display: inline-block;
+    background-color: #eee;
+    width: 250px;
+    height: 330px;
+    margin-left:50px;
+    text-align: center;
+    position: relative;
+}
+
+button {
+    width: 200px;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+    background-color: #03A9F4;
+    border: none;
+    border-radius: 10px;
+}
+
+.shape {
+    width: 200px;
+    height: 200px;
+    margin: 30px 0;
+    background-color: #ddd;
+    position: relative;
+    left: 25px;
+    line-height: 200px;
+    font-size:xx-large;
+    font-weight: bolder;
+    border-radius: 50%;
+}
+
+.right::before {
+    content: "Or";
+    position: absolute;
+    background-color: #03A9F4;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    top: 50%;
+    left: -42.5px;
+}
+
+.left::after {
+    content: "";
+    position: absolute;
+    background-color: #03A9F4;
+    width: 1px;
+    height: 330px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    right: -27.5px;
+    top: 0;
+}
