@@ -1,0 +1,59 @@
+div {
+  background-color: #eee;
+  margin: 30px auto;
+  width: 600px;
+  height: 70px;
+  line-height: 70px;
+  font-size: x-large;
+  font-weight: bold;
+  letter-spacing: 10px;
+  text-align: center;
+  border-left: 7px solid red;
+  border-right: 7px solid #673ab7;
+  position: relative;
+}
+
+div::first-letter {
+  color: red;
+}
+
+div::before {
+  content: "";
+  background-color: #673ab7;
+  position: absolute;
+  width: 600px;
+  height: 7px;
+  left: 0;
+  background-image: linear-gradient(
+    to right,
+    red 20%,
+    #2196f3 20%,
+    #2196f3 40%,
+    green 40%,
+    green 60%,
+    #e91e63 60%,
+    #e91e63 80%,
+    #673ab7 80%
+  );
+}
+
+div::after {
+    content: "";
+    background-color: #673ab7;
+    position: absolute;
+    width: 600px;
+    height: 7px;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(
+      to right,
+      red 20%,
+      #2196f3 20%,
+      #2196f3 40%,
+      green 40%,
+      green 60%,
+      #e91e63 60%,
+      #e91e63 80%,
+      #673ab7 80%
+    );
+}

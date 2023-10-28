@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  background-color: #eee;
+  display: block;
+  margin-top: 20px;
+  width: 600px;
+  padding: 20px;
+  position: relative;
+  caret-color: red;
+  
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  width:500px;
+}
+
+input:focus{
+  outline: none;
+}
+
+div::after {
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 600px;
+  height: 5px;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, red 50%, green 50%);
+}
