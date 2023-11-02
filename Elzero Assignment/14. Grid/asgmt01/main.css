@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 30px auto;
+  display: grid;
+  grid-template: 1fr repeat(1, 7fr) / repeat(3, 1fr);
+  gap: 20px;
+}
+
+div div {
+  background-color: #607d8b;
+  counter-increment: nums;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+div div::before {
+  content: "Element " counter(nums);
+  color: white;
+  font-weight: bold;
+}

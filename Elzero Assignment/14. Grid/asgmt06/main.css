@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.parent {
+    background-color: #eee;
+    height:100%;
+    padding: 20px;
+    display: grid;
+    grid-template: repeat(3,250px) 200px / repeat(4,1fr);
+    gap: 5px;
+}
+
+.parent div {
+    background-color: white;
+    overflow: hidden;
+    border-bottom:3px solid red;
+}
+
+p {
+    padding: 10px;
+}
+
+.childs-1 {
+    grid-column: span 2;
+}
+
+.childs-3 {
+    background-color: black !important;
+    grid-row: span 3;
+    color: white;
+}
+
+.childs-4 {
+    grid-row: span 2;
+}
+
+.childs-5 {
+    background-color: black !important;
+    color: white;
+    grid-column: span 2;
+}
+
+.childs-6 {
+    grid-column: span 2;
+}
+
+.childs-8 {
+    background-color: black !important;
+    color: white;
+}
+
+.name {
+    font-weight: bold;
+    font-size: large;
+}
+
+.job {
+    color: gray;
+    font-size: small;
+}
+
+.first-lorem {
+    font-weight: bold;
+}

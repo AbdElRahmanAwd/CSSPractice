@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+}
+
+.layout {
+    height: 100vh;
+    display: grid;
+    grid-template: 50px 1fr 50px / 70% 30%;
+}
+
+header {
+    background-color: #03A9F4;
+    grid-column: 1/3;
+}
+header::before {
+    content: "Header";
+line-height: 50px;
+margin-left: 15px;
+}
+
+section {
+    background-color:#FF5722 ;
+}
+section::before {
+    content: "Section";
+    line-height: 50px;
+    margin-left: 15px;
+}
+
+aside {
+    background-color:#607D8B ;
+}
+aside::before {
+    content: "Aside";
+    line-height: 50px;
+    margin-left: 15px;
+}
+
+footer {
+    background-color:#009688 ;
+    grid-column: 1/3;
+}
+footer::before {
+    content: "Footer";
+    line-height: 50px;
+    margin-left: 15px;
+}

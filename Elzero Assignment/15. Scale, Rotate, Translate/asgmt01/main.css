@@ -1,0 +1,33 @@
+div {
+    background-color: #eee;
+    width: 300px;
+    height: 200px;
+    margin: 30px auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 40px;
+    color:#03A9F4 ;
+    position: relative;
+}
+
+div::before {
+    content: "";
+    background-color: #03A9F4;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+    transform: rotate(-7deg);
+}
+
+div::after {
+    content: "";
+    background-color: #E91E63;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    z-index: -2;
+    transform: rotate(5deg);
+}
