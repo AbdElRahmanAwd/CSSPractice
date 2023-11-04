@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-color: #323234
+}
+
+.parent {
+    width: 370px;
+    height: 370px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+.parent .char {
+    padding: 10px;
+    display: grid;
+    grid-template: repeat(7 , 1fr)/50px 1fr;
+    position: relative;
+}
+
+.tall-part {
+    background-color: var(--background-color);
+    grid-row: 1/8;
+}
+.under-part1 {
+    background-color: var(--background-color);
+    grid-area: 1;
+}
+.under-part2 {
+    background-color: var(--background-color);
+    grid-area: 4;
+}
+.under-part3{
+    background-color: var(--background-color);
+    grid-area: 7;
+}
+
+.char::after {
+    content: "";
+    position: absolute;
+    background-color: #FEA604;
+    width: 30px;
+    height: 30px;
+}
+
+.char.E::after {
+    transform: translate(130px , 20px);
+    animation: charE-move 6s linear  infinite;
+}
+
+.char.L::after {
+    transform: translate(130px , 320px );
+    animation: charL-move 6s linear infinite ;
+}
+/*
+ width>> 180-20padding
+hight>>370-20padding
+ */
+@keyframes charL-move {
+    10%{
+        transform: translate(20px , 320px );
+    }
+    25%{
+        transform: translate(20px , 20px);
+        opacity: 1;
+    }
+    50%{
+        transform: translate(20px , 20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(20px , 20px);
+        opacity: 0;
+    }
+
+}
+
+@keyframes charE-move {
+    45%{
+        transform: translate(130px , 20px);
+    }
+    55%{
+        transform: translate(20px , 20px);
+    }
+    60%{
+        transform: translate(20px , 170px);
+    }
+    65%{
+        transform: translate(130px , 170px);
+    }
+    70%{
+        transform: translate(20px , 170px);
+    }
+    75%{
+        transform: translate(20px , 320px);
+    }
+    80%{
+        transform: translate(130px , 320px);
+    }
+    85%{
+        transform: translate(20px , 320px);
+    }
+    95%{
+        transform: translate(20px , 20px);
+    }
+    100%{
+        transform: translate(130px , 20px);
+    }
+}

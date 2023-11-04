@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    width: 50px;
+    height: 50px;
+    margin: calc(50vh - 25px) auto;
+    position: relative;
+}
+
+.parent div {
+    position: absolute;
+    animation: rotate-till-hover 1s linear infinite ;
+    animation-play-state: paused;
+}
+
+.parent .in {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #24A3FC;
+    border-bottom-color: transparent;
+}
+
+.parent .center {
+    width: calc(100% + 14px);
+    height:  calc(100% + 14px);
+    border-radius: 50%;
+    left: -7px;
+    top: -7px;
+    border: 5px solid #FCA600;
+    border-bottom-color: transparent;
+    animation-duration: 1.5s;
+}
+
+.parent .out {
+    width: calc(100% + 28px);
+    height: calc(100% + 28px);
+    border-radius: 50%;
+    left: -14px;
+    top: -14px;
+    border: 5px solid #000000;
+    border-bottom-color: transparent;
+    animation-duration: 2s;
+}
+
+.parent:hover  div {
+    animation-play-state: running;
+}
+
+
+@keyframes rotate-till-hover {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
