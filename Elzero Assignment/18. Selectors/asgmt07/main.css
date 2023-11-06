@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+div:nth-of-type(1) div:nth-last-child(2) {
+    color: red;
+}
+

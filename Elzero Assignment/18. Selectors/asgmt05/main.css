@@ -1,0 +1,7 @@
+p {
+    margin: 0;
+}
+
+div:nth-of-type(2) [title] {
+    color: red;
+}
