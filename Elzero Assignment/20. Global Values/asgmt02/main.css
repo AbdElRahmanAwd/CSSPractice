@@ -1,0 +1,47 @@
+.arrow {
+    background-color: #ddd;
+    width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    position: relative;
+}
+
+.arrow::after {
+    content: "";
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+}
+
+.arrow.top::after {
+    content: "";
+    border-bottom-color:#ddd ;
+    position: absolute;
+    left: 280px;
+    top: -40px;
+}
+
+.arrow.right::after {
+    content: "";
+    border-left-color:#ddd ;
+    position: absolute;
+    left: 640px;
+    top: 10px;
+}
+
+.arrow.bottom::after {
+    content: "";
+    border-top-color:#ddd ;
+    position: absolute;
+    left: 280px;
+    top:60px;
+}
+
+.arrow.left::after {
+    content: "";
+    border-right-color:#ddd ;
+    position: absolute;
+    left: -40px;
+    top: 10px;
+}
